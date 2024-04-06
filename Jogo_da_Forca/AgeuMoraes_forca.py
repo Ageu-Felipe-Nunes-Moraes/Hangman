@@ -364,8 +364,13 @@ tela.attributes("-topmost", True)
 tela.configure(background='white')
 
 
+# Caminho atual dos arquivos
+caminhoAtual = os.path.abspath(os.path.dirname(__file__))
+
+caminhoRelativoForcaTxt = os.path.join(caminhoAtual, 'forca.txt')
+
 # Ler dados de um arquivo
-with open("forca.txt", 'r') as arquivo:
+with open(caminhoRelativoForcaTxt, 'r') as arquivo:
 
     # Organiza o arquivo para ser lido
     palavra = arquivo.readlines()
@@ -377,20 +382,30 @@ semQuebraLinha = [linha.rstrip() for linha in palavra]
 palavraSorteada = choice(semQuebraLinha)
 
 
+# Todos os caminhos relativos dos arquivos do jogo
+caminhoRelativoImagemForca = os.path.join(caminhoAtual, 'madeiraForca.png')
+caminhoRelativoImagemCabeca = os.path.join(caminhoAtual, 'cabecaForca.png')
+caminhoRelativoImagemCorpo = os.path.join(caminhoAtual, 'corpoForca.png')
+caminhoRelativoImagemBraco1 = os.path.join(caminhoAtual, 'braco1Forca.png')
+caminhoRelativoSImagemBraco2 = os.path.join(caminhoAtual, 'braco2Forca.png')
+caminhoRelativoImagemPerna1 = os.path.join(caminhoAtual, 'perna1Forca.png')
+caminhoRelativoImagemPerna2 = os.path.join(caminhoAtual, 'perna2Forca.png')
+
+
 # Buscar o endereço das imagens
-enderecoImagemForca = tk.PhotoImage(file='/home/usuario/Downloads/madeiraForca.png') 
+enderecoImagemForca = tk.PhotoImage(file=caminhoRelativoImagemForca) 
 
-enderecoImagemCabeca = tk.PhotoImage(file='/home/usuario/Downloads/cabecaForca.png')
+enderecoImagemCabeca = tk.PhotoImage(file=caminhoRelativoImagemCabeca)
 
-enderecoImagemCorpo = tk.PhotoImage(file="/home/usuario/Downloads/corpoForca.png")
+enderecoImagemCorpo = tk.PhotoImage(file=caminhoRelativoImagemCorpo)
 
-enderecoImagemBraco1 = tk.PhotoImage(file="/home/usuario/Downloads/braco1Forca.png")
+enderecoImagemBraco1 = tk.PhotoImage(file=caminhoRelativoImagemBraco1)
 
-enderecoImagemBraco2 = tk.PhotoImage(file="/home/usuario/Downloads/braco2Forca.png")
+enderecoImagemBraco2 = tk.PhotoImage(file=caminhoRelativoSImagemBraco2)
 
-enderecoImagemPerna1 = tk.PhotoImage(file="/home/usuario/Downloads/perna1Forca.png")
+enderecoImagemPerna1 = tk.PhotoImage(file=caminhoRelativoImagemPerna1)
 
-enderecoImagemPerna2 = tk.PhotoImage(file="/home/usuario/Downloads/perna2Forca.png")
+enderecoImagemPerna2 = tk.PhotoImage(file=caminhoRelativoImagemPerna2)
 
 
 # Traz a imagem para o parâmetro 'image' através da widget(ferramenta) 'Label'
@@ -446,9 +461,10 @@ letrasQuantidade = len(palavraSorteada)
 # Deixam as letras separadas e em maiúsculas
 letrasSeparadas = list(palavraSorteada.upper())
 
+caminhoRelativoImagemCaixaLetra = os.path.join(caminhoAtual, 'caixaLetra.png')
 
 # Chama a imagem da caixa da letra para uma variável
-caixaLetra = tk.PhotoImage(file="/home/usuario/Downloads/caixaLetra.png")
+caixaLetra = tk.PhotoImage(file=caminhoRelativoImagemCaixaLetras)
 
 
 # Número incial de um contador que faz adição
