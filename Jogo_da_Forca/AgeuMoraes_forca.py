@@ -464,7 +464,7 @@ letrasSeparadas = list(palavraSorteada.upper())
 caminhoRelativoImagemCaixaLetra = os.path.join(caminhoAtual, 'caixaLetra.png')
 
 # Chama a imagem da caixa da letra para uma variável
-caixaLetra = tk.PhotoImage(file=caminhoRelativoImagemCaixaLetras)
+caixaLetra = tk.PhotoImage(file=caminhoRelativoImagemCaixaLetra)
 
 
 # Número incial de um contador que faz adição
