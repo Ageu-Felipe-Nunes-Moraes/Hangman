@@ -361,7 +361,7 @@ tela.configure(background='white')
 # Caminho atual dos arquivos
 caminho_atual = os.path.abspath(os.path.dirname(__file__))
 
-caminho_relativo_forca_txt = os.path.join(caminho_atual, 'forca.txt')
+caminho_relativo_forca_txt = os.path.join(caminho_atual, 'Recursos_Jogo/forca.txt')
 
 # Ler dados de um arquivo
 with open(caminho_relativo_forca_txt, 'r') as arquivo:
@@ -377,13 +377,13 @@ palavra_sorteada = choice(sem_quebra_linha)
 
 
 # Todos os caminhos relativos dos arquivos do jogo
-caminho_relativo_imagem_forca = os.path.join(caminho_atual, 'madeiraForca.png')
-caminho_relativo_imagem_cabeca = os.path.join(caminho_atual, 'cabecaForca.png')
-caminho_relativo_imagem_corpo = os.path.join(caminho_atual, 'corpoForca.png')
-caminho_relativo_imagem_braco1 = os.path.join(caminho_atual, 'braco1Forca.png')
-caminho_relativo_imagem_braco2 = os.path.join(caminho_atual, 'braco2Forca.png')
-caminho_relativo_imagem_perna1 = os.path.join(caminho_atual, 'perna1Forca.png')
-caminho_relativo_imagem_perna2 = os.path.join(caminho_atual, 'perna2Forca.png')
+caminho_relativo_imagem_forca = os.path.join(caminho_atual, 'Recursos_Jogo/madeiraForca.png')
+caminho_relativo_imagem_cabeca = os.path.join(caminho_atual, 'Recursos_Jogo/cabecaForca.png')
+caminho_relativo_imagem_corpo = os.path.join(caminho_atual, 'Recursos_Jogo/corpoForca.png')
+caminho_relativo_imagem_braco1 = os.path.join(caminho_atual, 'Recursos_Jogo/braco1Forca.png')
+caminho_relativo_imagem_braco2 = os.path.join(caminho_atual, 'Recursos_Jogo/braco2Forca.png')
+caminho_relativo_imagem_perna1 = os.path.join(caminho_atual, 'Recursos_Jogo/perna1Forca.png')
+caminho_relativo_imagem_perna2 = os.path.join(caminho_atual, 'Recursos_Jogo/perna2Forca.png')
 
 
 # Buscar o endereço das imagens
@@ -455,7 +455,7 @@ letras_quantidade = len(palavra_sorteada)
 # Deixam as letras separadas e em maiúsculas
 letras_separadas = list(palavra_sorteada.upper())
 
-caminho_relativo_imagem_caixa_letra = os.path.join(caminho_atual, 'caixaLetra.png')
+caminho_relativo_imagem_caixa_letra = os.path.join(caminho_atual, 'Recursos_Jogo/caixaLetra.png')
 
 # Chama a imagem da caixa da letra para uma variável
 caixa_letra = tk.PhotoImage(file=caminho_relativo_imagem_caixa_letra)
