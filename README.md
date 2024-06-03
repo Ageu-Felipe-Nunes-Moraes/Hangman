@@ -1,63 +1,61 @@
 # Hangman
 
-Neste jogo, recriei o clássico jogo Hangman, também conhecido como Jogo da Forca. Minha versão apresenta 4 níveis de dificuldade: normal, tormento, inferno e nightmare.
+In this game, I recreated the classic Hangman game, also known as Jogo da Forca. My version features 4 difficulty levels: normal, tormento, inferno, and nightmare.
 
-## Funcionalidades
+## Features
 
-- **4 Níveis de Dificuldade:** Escolha entre os níveis de dificuldade: normal, tormento, inferno e nightmare.
-- **Visualização de Progresso:** Conforme o jogador comete erros, partes do corpo do enforcado são desenhadas na tela.
-- **Fim de Jogo:** O jogo termina quando o jogador acerta a palavra correta ou quando o enforcado é completamente desenhado.
-- **Reiniciar o Jogo:** Após o término do jogo, você pode reiniciá-lo para jogar novamente.
+- **4 Difficulty Levels:** Choose from the difficulty levels: normal, tormento, inferno, and nightmare.
+- **Progress Visualization:** As the player makes mistakes, parts of the hangman's body are drawn on the screen.
+- **Game Over:** The game ends when the player guesses the correct word or when the hangman is fully drawn.
+- **Restart Game:** After the game ends, you can restart it to play again.
 
-## O que aparece a cada erro nas respectivas dificuldades:
+## What appears at each error for the respective difficulties:
 
-- **Normal:** Cabeça, tronco, braço esquerdo, braço direito, perna esquerda, perna direita, GAME OVER
-- **Tormento:** Cabeça, tronco, ambos os braços, ambas as pernas, GAME OVER
-- **Inferno:** Cabeça, restante do corpo, GAME OVER
-- **Nightmare:** Aparece tudo, GAME OVER
+- **Normal:** Head, torso, left arm, right arm, left leg, right leg, GAME OVER
+- **Tormento:** Head, torso, both arms, both legs, GAME OVER
+- **Inferno:** Head, rest of the body, GAME OVER
+- **Nightmare:** Everything appears, GAME OVER
 
-## Requisitos de Instalação
+## Installation Requirements
 
 - Python 3.x
 - tkinter
 - tqdm
 - easygui
 
-## Bibliotecas Necessárias
+## Required Libraries
 
-- `random.choice`: Módulo para seleção aleatória de palavras.
-- `tkinter`: Módulo gráfico para a interface do jogo.
-- `tqdm`: Módulo para exibir barras de progresso.
-- `time`: Módulo para manipulação de tempo.
-- `easygui`: Módulo para criação de menus.
-- `os` e `sys`: Módulos que reiniciam o programa do zero.
+- `random.choice`: Module for random word selection.
+- `tkinter`: Graphical module for the game's interface.
+- `tqdm`: Module for displaying progress bars.
+- `time`: Module for time manipulation.
+- `easygui`: Module for creating menus.
+- `os` and `sys`: Modules for restarting the program from scratch.
 
-## Como Jogar
+## How to Play
 
-1. Certifique-se de ter Python e as bibliotecas necessárias instaladas em seu sistema.
-2. Clone ou baixe o repositório deste jogo.
-3. Execute o arquivo principal do jogo.
-4. Escolha o nível de dificuldade desejado no menu.
-5. Tente adivinhar a palavra correta digitando letras.
-6. Conforme você erra, partes do corpo do enforcado são desenhadas na tela.
-7. Tente adivinhar a palavra antes que o enforcado seja totalmente desenhado.
-8. O jogo termina quando você acerta a palavra ou quando o enforcado é completo.
+1. Ensure that Python and the necessary libraries are installed on your system.
+2. Clone or download the repository of this game.
+3. Run the main game file.
+4. Choose the desired difficulty level from the menu.
+5. Try to guess the correct word by typing letters.
+6. As you make mistakes, parts of the hangman's body are drawn on the screen.
+7. Try to guess the word before the hangman is fully drawn.
+8. The game ends when you guess the word or when the hangman is complete.
 
-## Como Contribuir
+## How to Contribute
 
-Se desejar contribuir para o desenvolvimento deste jogo, siga estas etapas:
+If you wish to contribute to the development of this game, follow these steps:
 
-1. Fork o repositório.
-2. Faça suas modificações e melhorias no código.
-3. Teste suas alterações para garantir que funcionem corretamente.
-4. Envie um pull request descrevendo as mudanças que você fez e suas razões para elas.
+1. Fork the repository.
+2. Make your modifications and improvements to the code.
+3. Test your changes to ensure they work correctly.
+4. Submit a pull request describing the changes you made and the reasons for them.
 
-## Autor
+## Author
 
-Este jogo foi recriado por Ageu Felipe Nunes Moraes como parte de um projeto acadêmico inspirado no clássico jogo da forca. Para dúvidas ou sugestões, entre em contato com [ageumoraes67@gmail.com].
+This game was recreated by Ageu Felipe Nunes Moraes as part of an academic project inspired by the classic Hangman game. For questions or suggestions, contact [ageumoraes67@gmail.com](mailto:ageumoraes67@gmail.com).
 
-## Aviso Legal
+## Disclaimer
 
-Este é um projeto de software desenvolvido por um indivíduo e não tem afiliação com o jogo original da forca ou seus criadores.
-
- 
+This is a software project developed by an individual and is not affiliated with the original Hangman game or its creators.
